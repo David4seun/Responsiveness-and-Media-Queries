@@ -1,0 +1,126 @@
+* {
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.main-content {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    min-height: 100vh;
+    color: white;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-left {
+    width: 50%;
+    min-width: 500px;
+    max-width: 800px;
+}
+
+.content-right {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and ( max-width: 375px) {
+    .main-content {
+        flex-direction: column;
+        width: 100%;
+        min-height: 600px;
+    }
+    body {
+        background-image: url(/images/bg-intro-mobile.png);
+    }
+    .content-left {
+        width: 100%;
+        min-width: 370px;
+        max-width: 800px;
+    }
+    .content-right {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.content-left h1,
+p {
+    margin: 50px;
+    font-size: 1.1em;
+}
+
+.content-left h1 {
+    font-size: 2.9em;
+}
+
+.content-right p {
+    background-color: hsl(248, 32%, 49%);
+    margin: 20px auto;
+    /* width: 100%; */
+    min-width: 500px;
+    padding: 20px 10px;
+    font-size: 1 em;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.form {
+    margin: auto;
+    padding: 40px;
+    background-color: white;
+    min-width: 500px;
+    border-radius: 10px;
+}
+
+.form .input-container {
+    margin-bottom: 15px;
+    max-width: 600px;
+}
+
+.form .input1 {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+}
+
+.form .input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.form p {
+    background-color: white;
+    font-size: 12px;
+    color: grey;
+    padding: 0px;
+    margin: 0px;
+    min-width: 400px;
+    box-shadow: none;
+}
+
+.form p strong {
+    color: hsl(0, 100%, 74%);
+}
